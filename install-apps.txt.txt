@@ -1,0 +1,26 @@
+@echo off
+echo ==========================================
+echo INICIANDO CONFIGURACION AUTOMATICA
+echo ==========================================
+
+:: 1. GIT (Fundamental para bajar el resto de tus cosas)
+echo Instalando Git...
+winget install --id Git.Git -e --source winget
+
+:: 2. WinRAR (Nota: 7-Zip es opensource, pero WinRAR funciona perfecto)
+echo Instalando WinRAR...
+winget install --id RARLab.WinRAR -e --source winget
+
+:: 3. Brave (Si ya esta, lo actualiza o lo salta)
+echo Verificando Brave Browser...
+winget install --id Brave.Brave -e --source winget
+
+:: 4. Otros utiles (Sugerencias rapidas)
+echo Instalando Google Antigravity
+winget install --id Google.Antigravity -e --source winget
+
+echo ==========================================
+echo INSTALACION FINALIZADA.
+echo Por favor, cierra esta ventana y reinicia la terminal.
+echo ==========================================
+pause
